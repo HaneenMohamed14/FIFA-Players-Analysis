@@ -1,0 +1,94 @@
+{
+    "group_members": [
+        {
+            "name": "Silvana Marzouk",
+            "id": "2401244674"
+        },
+        {
+            "name": "Habiba Alaa Mohamed",
+            "id": "2401247550"
+        },
+        {
+            "name": "Haneen Mohamed",
+            "id": "2401249107"
+        },
+        {
+            "name": "Toqa Samy",
+            "id": "2401242505"
+        },
+        {
+            "name": "Habiba Hossam",
+            "id": "2401246875"
+        }
+    ],
+    "best_hyperparameters": {
+        "KNN_Regressor": {
+            "n_neighbors": 6,
+            "metric": "manhattan"
+        },
+        "KNN_Classifier": {
+            "n_neighbors": 18,
+            "metric": "manhattan"
+        },
+        "SVR": {
+            "C": 100,
+            "epsilon": 0.1,
+            "gamma": "scale",
+            "kernel": "rbf"
+        },
+        "SVC": {
+            "C": 100,
+            "gamma": "scale",
+            "kernel": "rbf"
+        },
+        "RandomForest_Regressor": {
+            "max_depth": 15,
+            "min_samples_split": 10,
+            "n_estimators": 300
+        },
+        "RandomForest_Classifier": {
+            "max_depth": 10,
+            "max_features": "sqrt",
+            "min_samples_leaf": 8,
+            "min_samples_split": 20,
+            "n_estimators": 300
+        },
+        "LogisticRegression": {
+            "C": 14.563484775012444,
+            "penalty": "l2",
+            "solver": "lbfgs"
+        },
+        "Lasso": {
+            "alpha": 0.002329951810515372
+        },
+        "Ridge": {
+            "alpha": 59.636233165946365
+        }
+    },
+    "cv_stability": {
+        "regression": {
+            "model": "StackingRegressor",
+            "cv_r2_scores": [
+                0.9337,
+                0.9466,
+                0.9606,
+                0.9451,
+                0.9141
+            ],
+            "mean_r2": 0.94,
+            "std_r2": 0.0155
+        },
+        "classification": {
+            "model": "StackingClassifier",
+            "cv_accuracy_scores": [
+                0.8592,
+                0.8646,
+                0.8516,
+                0.8455,
+                0.8557
+            ],
+            "mean_accuracy": 0.8553,
+            "std_accuracy": 0.0065
+        }
+    }
+}
